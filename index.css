@@ -607,8 +607,9 @@ border: 0.2vh solid #fdf6f0;
 
     .carousel{
       margin-left: 1vh; 
-      width: 90%; 
-      height: 10%;
+       width: 90%; 
+      height: 10%; 
+     
     }
 .fresh{
     margin-left: 7vw;
