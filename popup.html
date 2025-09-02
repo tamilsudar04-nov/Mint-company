@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onclick Popup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Popup background overlay */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Popup box */
+    .popup {
+      background: #fff;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    /* Close button */
+    .close-btn {
+      background: crimson;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to trigger popup -->
+  <button onclick="openPopup()">Open Popup</button>
+
+  <!-- Popup structure -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup">
+      <h2>Popup Title</h2>
+      <p>This is a simple onclick popup example.</p>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Open popup
+    function openPopup() {
+      document.getElementById("popupOverlay").style.display = "flex";
+    }
+
+    // Close popup
+    function closePopup() {
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

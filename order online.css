@@ -1,0 +1,966 @@
+ @import url('https://fonts.cdnfonts.com/css/frenklins-display-trial');
+ @import url('https://fonts.cdnfonts.com/css/quicksand');
+ 
+/* font-family:'Quicksand Book', sans-serif; */
+/* font-family: 'Frenklins Display Trial', sans-serif; */
+
+  body{
+    position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(249, 247, 244) !important;
+  scroll-behavior: smooth;
+   }
+    /* nav */
+   .navbar{
+    border: solid rgb(249, 247, 244) ;
+    background-color:rgb(249, 247, 244);
+    height:25vh;
+    position:relative;
+    }
+    .leaf{
+       width: 6vw;
+       height: 12vh;
+       margin-left: 15vh;
+       margin-top: -35vh;
+        position: absolute ;
+       z-index: 2;
+    }
+    .mint{
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       text-decoration: none;
+      position: absolute;
+      font-size: 4.5vh;
+      color: black;
+      margin-top: -9vh;
+      margin-left: -11vh;
+    }
+    .m{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left:50vh;
+      margin-top: -15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .m:hover{
+      color: rgb(82, 112, 82);
+    }
+    .our{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left:63vh;
+      margin-top:-15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .our:hover{
+    color: rgb(82, 112, 82);
+    }
+    .reser{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left: 83vh;
+      margin-top: -15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .reser:hover{
+      color: rgb(82, 112, 82);
+    }
+    .log{
+       width: 3vw;
+       height: 6vh;
+       margin-left: 115vh;
+       position: relative;
+      }
+      .login{
+        font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      position: absolute;
+      margin-left: 152vh;
+      margin-top: -18vh;
+      }
+      .lock{
+       width:2.5vw;
+       height:5vh; 
+       margin-left:15vh;
+       margin-top:-29vh;
+       position:relative;
+      }
+
+    .leaf{
+       width: 6vw;
+       height: 12vh;
+       margin-left: 15vh;
+       margin-top: -35vh;
+        position: relative;
+       z-index: 2;
+    }
+    .mint{
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       text-decoration: none;
+      position: absolute;
+      font-size: 4.5vh;
+      color: black;
+      margin-top: -9vh;
+      margin-left: -11vh;
+    }
+    .m{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left:50vh;
+      margin-top: -15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .m:hover{
+      color: rgb(82, 112, 82);
+    }
+    .our{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left:63vh;
+      margin-top:-15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .our:hover{
+    color: rgb(82, 112, 82);
+    }
+    .reser{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left: 83vh;
+      margin-top: -15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .reser:hover{
+      color: rgb(82, 112, 82);
+    }
+    .log{
+       width: 3vw;
+       height: 6vh;
+       margin-left: 115vh;
+       margin-top: -29vh;
+      }
+      .login{
+        font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      position: absolute;
+      margin-left: 152vh;
+      margin-top: -18vh;
+      }
+      .lock{
+       width:2.5vw;
+       height:5vh; 
+       margin-left:15vh;
+       margin-top:-29vh;
+       
+      }
+      .oo{
+   font-weight: bold;
+  color: white;
+  background-color: rgb(1, 1, 31);
+  border: solid;
+  max-width: fit-content;
+  padding: 1.5vh 1vw;
+  margin-left:10vh;
+  margin-top: -15vh;
+  border-radius: 5vh;
+  position: absolute;
+  font-family: 'Frenklins Display Trial', sans-serif;
+  text-decoration: none;
+    }
+.oo:hover{
+  color: rgb(1, 1, 31);
+  background-color: white;
+    }
+    
+.menub {
+  display: none;
+}
+.side{
+  display: none;
+}
+     .side .close-btn {
+  display:none;
+} 
+      .online{
+        font-family: 'Frenklins Display Trial', sans-serif; 
+       font-size: 8vh;
+       text-align: center;
+       margin-top: 10vh;
+      }
+      .you{
+        font-size: 3vh;
+        font-weight: bold;
+       text-align: center;
+        margin-top: -2vh;
+        font-family:'Quicksand Book', sans-serif;
+      }
+      .Accepting{
+        border: 0.2vh solid  black;
+        max-width: fit-content;
+        font-weight: bold;
+        padding: 0.80vh 1.50vh;
+        border-radius: 3vh;
+          font-family: 'Frenklins Display Trial', sans-serif; 
+         margin-left: 95vh;
+        }
+        .button{
+          margin-left: 25vh;
+        }
+       .pick{
+        margin-left:50vh;
+        width: 15vw;
+        height: 6vh;
+        font-size: 3.5vh;
+        font-family: 'Frenklins Display Trial', sans-serif; 
+        
+       }
+       .deli{
+       width: 15vw;
+        height: 6vh;
+        font-size: 3.5vh;
+          font-family: 'Frenklins Display Trial', sans-serif; 
+      }
+       .how{
+        
+        font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+       }
+       .from{
+         font-size: 2.4vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+       }
+       .india{
+         font-size: 3vh;
+        font-weight: bold;
+         font-family: 'Frenklins Display Trial', sans-serif; 
+       }
+       .yours{
+         font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+       }
+       .save{
+        background-color: green;
+        color: white;
+        margin-left: 50vh;
+        width: 6vw;
+        height: 4vh;
+       }
+        .content-block{
+          margin-top: 5vh;
+          border: 0.2vh solid black;
+          padding: 5vh;
+          max-width: fit-content;
+          margin-left: 70vh;
+        }
+        .date{
+           font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .option{
+          width: 15vw;
+        height: 4vh;
+        font-size: 2.5vh;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .time{
+          font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .type{
+           width: 15vw;
+        height: 4vh;
+        font-size: 2.5vh;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .sav{
+           background-color: green;
+        color: white;
+        margin-left: 50vh;
+        margin-top: 2vh;
+        width: 6vw;
+        height: 4vh;
+        }
+
+    
+
+
+
+    /* Navbar */
+    nav {
+      position:sticky;
+      top: 0;
+      background-color:rgb(249, 247, 244);
+      padding: 3vh;
+      display: flex;
+      justify-content: center;
+      gap: 10vh;
+      z-index: 1000;
+      font-family:'Quicksand Book', sans-serif;
+    }
+    nav a {
+      color:#ff6600;
+      text-decoration: none;
+      font-size: 2.4vh;
+      position: relative;
+      transition:  #ff6600 0.1s ease; 
+    }
+    
+   nav a.active {
+      color: #ff6600;
+      border-bottom: 0.1vh solid #ff6600;
+    }
+
+    .ppp{
+      font-size: 5vh;
+     text-align: center;
+     font-weight: bold;
+    }
+    /* Sections */
+    section {
+      min-height: 10vh;
+      padding: 10vh 2vh 5vh;
+    }
+    
+.pic{
+  height: 20vh;
+  width: 10vw;
+}
+
+    /* Dish Button */
+    .dish-card {
+      display: block;
+      width: 80vh;
+      margin: 5vh 63vh;
+      padding: 6vh;
+      border-radius: 2vh;
+      border: 0.3vh solid #070707;
+      background: #fff;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .dish-card:hover {
+      transform: scale(1.03);
+    }
+    .dish-title { 
+      font-size: 4vh;
+       font-weight: bold; 
+       margin-bottom: 3vh;
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       }
+    .dish-desc { 
+      font-size: 2.5vh; 
+      font-family:'Quicksand Book', sans-serif;
+      margin-bottom: 3vh;
+     }
+    .dish-price {
+       font-size: 3vh;
+        font-weight: bold;
+        font-family:'Quicksand Book', sans-serif;
+       }
+
+    /* Popup Modal */
+
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .topic{
+      font-family: 'Frenklins Display Trial', sans-serif; 
+    }
+    .popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .close-btn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background: #ff6600;
+      color: #fff;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .img{
+      height: 50vh;
+      width: 30vw;
+    }
+
+    .box{
+  margin-top: 30vh;
+  border:38vh solid rgb(4, 4, 63);
+}
+ .connect{
+    color: white;
+    font-size: 5.5vh;
+    margin-top: -58vh;
+    margin-left: 30vh;
+   font-family: 'Frenklins Display Trial', sans-serif; 
+}  
+.insta{
+  margin-top: 2VH;
+  margin-left: 30vh;
+    width: 2vw;
+    height:5vh ;
+}
+.fb{
+   margin-top: 2VH;
+  width: 2vw;
+    height:5vh ;
+    margin-left:2vh;
+}
+.info{
+  font-size: 2.5vh;
+  color: white;
+  margin-top: 4VH;
+  margin-left: 30vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.Visit{
+  color: white;
+  margin-top: -30vh;
+  margin-left: 80vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.day{
+   color: white;
+   font-size: 2.3vh;
+  margin-top: 5vh;
+  margin-left: 80vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.ju{
+  color: white;
+  font-size: 5vh;
+  margin-top: -31vh;
+  margin-left: 130vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.deals{
+color: white;
+font-size: 2.3vh;
+margin-left: 130vh;
+font-family:'Quicksand Book', sans-serif;
+
+}
+.email{
+margin-left: 130vh;
+color: white;
+font-family:'Quicksand Book', sans-serif;
+}
+.emailbox{
+margin-left: 130vh;
+
+}
+.submit{
+border:0.2vh solid white;
+max-width: fit-content;
+padding: 1vh 2vh;
+margin-left: 137vh;
+margin-top: 5vh;
+border-radius: 4vh;
+font-size: 2vh;
+color: white;
+font-family:'Quicksand Book', sans-serif;
+}
+.submit:hover{
+    background-color: white;
+    color:rgb(4, 4, 63);
+}   
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+ 
+
+  body { 
+  margin: 0;
+   padding: 0;
+ height: 100%;
+ background-color: rgb(249, 247, 244) !important;
+  
+  }
+.navbar{
+     border:1px solid rgb(249, 238, 227);
+     background-color: rgb(249, 238, 227);
+     height:100px;
+     width: 98vw;
+    }
+    
+    .leaf{
+       width: 10vw;
+       height: 7vh;
+       margin-left: 8vh;
+       margin-top:-12vh;
+        position: absolute;
+      
+    }
+    .mint{
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       text-decoration: none;
+      position: absolute;
+      font-size: 3vh;
+      color: black;
+      margin-top: -5vh;
+      margin-left: 7.2vh;
+      
+     
+    } 
+    .m{
+     display: none;
+    }
+   
+    .our{
+      display: none;
+    }
+    
+    .reser{
+      display: none;
+    }
+    
+    .log{
+      display: none;
+      }
+      .login{
+       display: none;
+      }
+     
+.oo{
+  display: none;
+}
+.lock{
+  position: absolute;
+  width: auto;
+  margin-left: 28vh;
+  margin-top: -9vh;
+
+}
+.menub {
+  font-size:5vh; 
+  margin-top: -10vh;  
+   margin-left: 38vh; 
+  position: absolute;
+  display:block;  
+}
+
+/* Side navigation */
+.side {
+  height:30vh; 
+  width: 0;    
+z-index: 100;  
+border: 0.2vh solid #fdf6f0;
+   top: 0;
+  right:0;
+ background-color:#fdf6f0;
+  display:inline-block;
+   overflow-x: hidden;
+   position: absolute;
+  transition: 0.4s;
+  padding-top: 5vh;  
+  box-shadow: -0.5vw 0 1vw rgba(0,0,0,0.1); 
+}
+
+.side a {
+      display:block;
+      padding: 5px 5px;
+      text-decoration: none;
+      font-size: 2vh;
+      color: #1e1432;
+      transition: 0.2s;
+      text-align: center;
+    }
+
+  
+/* Close button */
+.side .close-bn {
+  position: absolute;
+  top: -2vh;
+  right: 0vw;          
+  font-size: 15vw;    
+  cursor: pointer;
+  display:inline-block;
+}
+.online{
+        font-family: 'Frenklins Display Trial', sans-serif; 
+       font-size: 6vh;
+       text-align: center;
+       margin-top: 5vh;
+      }
+      .you{
+        font-size: 2.5vh;
+        font-weight: bold;
+       text-align: center;
+        font-family:'Quicksand Book', sans-serif;
+      }
+     .Accepting{
+        border: 0.2vh solid  black;
+        max-width: fit-content;
+        font-weight: bold;
+        padding: 0.80vh 1.50vh;
+        border-radius: 3vh;
+          font-family: 'Frenklins Display Trial', sans-serif; 
+         margin-left: 13vh;
+        }
+        .button{
+          margin-left: 9vh;
+        }
+       .pick{
+        margin-left:0vh;
+        width: 30vw;
+        height: 5vh;
+        font-size: 3vh;
+        font-family: 'Frenklins Display Trial', sans-serif; 
+        
+       }
+       .deli{
+       width: 30vw;
+        height:5vh;
+        font-size: 3vh;
+          font-family: 'Frenklins Display Trial', sans-serif; 
+      }
+      .how{
+        
+        font-size: 2.5vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+       }
+       .from{
+         font-size: 2.2vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+       }
+       .india{
+         font-size: 2.5vh;
+        font-weight: bold;
+         font-family: 'Frenklins Display Trial', sans-serif; 
+       }
+       .yours{
+         font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+       }
+       .save{
+        background-color: green;
+        color: white;
+        margin-left: 0vh;
+        width:auto;
+        height: auto;
+       }
+      .content-block{
+          margin-top: 5vh;
+          border: 0.2vh solid black;
+          padding: 4vh;
+          max-width: fit-content;
+          margin-left: 2vh;
+        }
+      .date{
+
+           font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .option{
+          width: 40vw;
+        height: 4vh;
+        font-size: 2.5vh;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .time{
+          font-size: 3vh;
+        font-weight: bold;
+         font-family:'Quicksand Book', sans-serif;
+        }
+        .type{
+           width: 40vw;
+        height: 4vh;
+        font-size: 2.5vh;
+         font-family:'Quicksand Book', sans-serif;
+        }
+
+        .sav{
+           background-color: green;
+        color: white;
+        margin-left: 15vh;
+        margin-top: 2vh;
+        width:fit-content;
+        height: 4vh;
+        }
+         nav {
+      position:sticky;
+      
+      top: 0;
+      background-color:rgb(245, 236, 224);
+      padding: 2vh;
+      display: flex;
+      justify-content: center;
+      gap: 2vh;
+      z-index: 1000;
+      overflow-x: hidden;
+      font-family:'Quicksand Book', sans-serif;
+    }
+    nav a {
+      color:#ff6600;
+      text-decoration: none;
+      font-size: 2vh;
+      position: relative;
+      transition:  #ff6600 0.1s ease; 
+       overflow-x: hidden;
+    }
+    
+   nav a.active {
+      color: #ff6600;
+      border-bottom: 0.1vh solid #ff6600;
+    }
+
+    .ppp{
+      font-size: 4vh;
+     text-align: center;
+     font-weight: bold;
+    }
+    /* Sections */
+    section {
+      min-height: 2vh;
+      padding: 10vh 2vh 5vh;
+    }
+    
+.pic{
+  height: 25vh;
+  width: 50vw;
+}
+
+    /* Dish Button */
+    .dish-card {
+      display: block;
+      width: 80vw;
+      height: 60vh;
+      margin: 5vh 3vh;
+      padding: 6vh;
+      border-radius: 2vh;
+      border: 0.3vh solid #070707;
+      background: #fff;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .dish-card:hover {
+      transform: scale(1.03);
+    }
+    .dish-title { 
+      font-size: 2.5vh;
+       font-weight: bold; 
+      margin-top: vh;
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       }
+    .dish-desc { 
+      font-size: 2vh; 
+      font-family:'Quicksand Book', sans-serif;
+      margin-bottom: 3vh;
+     }
+    .dish-price {
+       font-size: 3vh;
+        font-weight: bold;
+        font-family:'Quicksand Book', sans-serif;
+       }
+
+       /* Popup Modal */
+
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 10vh; left: 0;
+      width:100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      overflow-x: hidden;
+      z-index: 2000;
+    }
+    .topic{
+     font-size: 4vh;
+      font-family: 'Frenklins Display Trial', sans-serif; 
+    }
+    .popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .close-btn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background: #ff6600;
+      color: #fff;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .img{
+      height: 20vh;
+      width: 40vw;
+    }
+.box{
+ margin-top: 0vh;
+  position: relative;
+  width: 99vw;
+  height: 120vh;
+  background-color:rgb(4, 4, 63);
+  border:2vh solid rgb(4, 4, 63);
+}
+ .connect{
+  position: absolute;
+    color: white;
+    font-size: 3vh;
+    margin-top: -115vh;
+    margin-left: 5vh;
+   font-family: 'Frenklins Display Trial', sans-serif; 
+}  
+.insta{
+  position: absolute;
+  margin-left: 5vh;
+  margin-top: -108vh;
+    width: 10vw;
+    height:5vh ;
+}
+.fb{
+  margin-left: 11vh;
+  margin-top: -108vh;
+  width: 10vw;
+  height:5vh ;
+  position: absolute; 
+}
+.info{
+  position: absolute;
+  font-size: 2.5vh;
+  color: white;
+  margin-top: -100vh;
+  margin-left: 5vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.Visit{
+  position: absolute;
+  color: white;
+  margin-top: -88vh;
+  margin-left: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.day{
+  position: absolute;
+   color: white;
+   font-size: 2.3vh;
+  margin-top: -80vh;
+  margin-left: 5vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.ju{
+  position: absolute;
+  color: white;
+  font-size: 3vh;
+  margin-top: -58vh;
+  margin-left: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.deals{
+  position: absolute;
+color: white;
+font-size: 2.3vh;
+margin-top: -52vh;
+margin-left: 5vh;
+font-family:'Quicksand Book', sans-serif;
+
+}
+.email{
+  position: absolute;
+margin-left: 5vh;
+margin-top: -38vh;
+color: white;
+font-family:'Quicksand Book', sans-serif;
+}
+.emailbox{
+margin-left: 5vh;
+margin-top: -38vh;
+position: absolute;
+}
+.submit{
+border:0.2vh solid white;
+max-width: fit-content;
+padding: 1vh 2vh;
+margin-left: 5vh;
+margin-top: -30vh;
+border-radius: 4vh;
+font-size: 2vh;
+color: white;
+position: absolute;
+font-family:'Quicksand Book', sans-serif;
+}
+.submit:hover{
+    background-color: white;
+    color:rgb(4, 4, 63);
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+  }

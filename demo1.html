@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu with ScrollSpy & Popups</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+   scroll-behavior: smooth;
+     
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #222;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      z-index: 1000;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a.active {
+      color: #ff6600;
+      font-weight: bold;
+      border-bottom: 2px solid #ff6600;
+    }
+
+    /* Sections */
+    section {
+      min-height: 100vh;
+      padding: 100px 20px 50px;
+    }
+    /* #snacks-starters { background: #fce4ec; }
+    #mains           { background: #e3f2fd; }
+    #salads          { background: #e8f5e9; } */
+
+    /* Dish Button */
+    .dish-card {
+      display: block;
+      width: 80vh;
+      margin: 5vh auto;
+      padding: 6vh;
+      border-radius: 2vh;
+      border: 0.3vh solid #070707;
+      background: #fff;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .dish-card:hover {
+      transform: scale(1.03);
+    }
+    .dish-title { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+    .dish-desc { font-size: 14px; margin-bottom: 10px; }
+    .dish-price { font-size: 16px; font-weight: bold; }
+
+    /* Popup Modal */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .close-btn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background: #ff6600;
+      color: #fff;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .img{
+      height: 50vh;
+      width: 30vw;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="menu-nav">
+    <a href="#snacks-starters" class="active" aria-current="true">Snacks & Starters</a>
+    <a href="#mains">Mains</a>
+    <a href="#salads">Salads</a>
+  </nav>
+
+  <main>
+    <!-- Snacks Section -->
+    <section id="#snacks-starters">
+      <h2>Snacks & Starters</h2>
+
+      <button class="dish-card" onclick="openPopup('popup1')">
+        <div class="dish-title">Hummus & Pita Bread</div>
+        <div class="dish-desc">Classic Middle Eastern combo that's healthy, filling, and easy to enjoy.</div>
+        <div class="dish-price">$38.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup2')">
+        <div class="dish-title">Crispy Cauliflower</div>
+        <div class="dish-desc">Crunchy outside, soft inside, full of flavor!</div>
+        <div class="dish-price">$32.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup3')">
+        <div class="dish-title">Sweet Potato Fries</div>
+        <div class="dish-desc">Crispy, mildly sweet fries made from spiced potato sticks.</div>
+        <div class="dish-price">$29.00</div>
+      </button>
+    </section>
+
+    <!-- Mains Section -->
+    <section id="#mains">
+      <h2>Mains</h2>
+
+      <button class="dish-card" onclick="openPopup('popup4')">
+        <div class="dish-title">Veggie Burger</div>
+        <div class="dish-desc">Plant-based patty served in a bun with veggies and sauces.</div>
+        <div class="dish-price">$61.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup5')">
+        <div class="dish-title">Power Bowl</div>
+        <div class="dish-desc">Nutrient-rich meal with grains, proteins, and veggies.</div>
+        <div class="dish-price">$58.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup6')">
+        <div class="dish-title">Lentil Stew</div>
+        <div class="dish-desc">Hearty stew made with lentils, vegetables, and spices.</div>
+        <div class="dish-price">$60.00</div>
+      </button>
+    </section>
+
+    <!-- Salads Section -->
+    <section id="#salads">
+      <h2>Salads</h2>
+
+      <button class="dish-card" onclick="openPopup('popup7')">
+        <div class="dish-title">Kale Caesar</div>
+        <div class="dish-desc">Fresh kale, Caesar dressing, and crunchy toppings.</div>
+        <div class="dish-price">$56.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup8')">
+        <div class="dish-title">Farm-to-Table Greens</div>
+        <div class="dish-desc">Locally sourced leafy vegetables fresh from the farm.</div>
+        <div class="dish-price">$67.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup9')">
+        <div class="dish-title">Roasted Beets & More</div>
+        <div class="dish-desc">Colorful roasted beets with fresh add-ons.</div>
+        <div class="dish-price">$54.00</div>
+      </button>
+    </section>
+  </main>
+
+  <!-- Popup Modals -->
+  <div id="popup1" class="popup-overlay">
+    <div class="popup">
+      <h1>Order Now</h1>
+      <h2>Hummus & Pita Bread</h2>
+      <img src="images/menu pic1.jpg" alt="menu1" class="img" >
+       <p>Classic Middle Eastern combo that's healthy, filling, and easy to enjoy.</p>
+       <h1><del>$38.00</del>Today Offer <ins>$35.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup1')">Close</button>
+    </div>
+  </div>
+
+  <div id="popup2" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Crispy Cauliflower</h2>
+      <img src="images/menu pic2.jpg" alt="menu2"  class="img"  >
+      <p>Crunchy outside, soft inside, full of flavor!</p>
+      <h1><del>$32.00</del>Today Offer <ins>$29.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup2')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup3" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Sweet Potato Fries</h2>
+      <img src="images/menu pic3.jpg" alt="menu3"  class="img" >
+      <p>Crispy, mildly sweet fries made from spiced potato sticks.</p>
+      <h1><del>$29.00</del>Today Offer <ins>$26.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup3')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup4" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Veggie Burger</h2>
+      <img src="images/menu pic4.jpg" alt="menu4"  class="img" >
+      <p>Plant-based patty served in a bun with veggies and sauces.</p>
+      <h1><del>$61.00</del>Today Offer <ins>$58.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup4')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup5" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Power Bowl</h2>
+      <img src="images/menu pic5.jpg" alt="menu5" class="img" >
+      <p>Nutrient-rich meal with grains, proteins, and veggies.</p>
+      <h1><del>$58.00</del>Today Offer <ins>$55.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup5')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup6" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Lentil Stew</h2>
+      <img src="images/menu pic6.jpg" alt="menu6" class="img" >
+      <p>Hearty stew made with lentils, vegetables, and spices.</p>
+      <h1><del>$60.00</del>Today Offer <ins>$57.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup6')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup7" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Kale Caesar</h2>
+      <img src="images/menu pic7.jpg" alt="menu7" class="img" >
+      <p>Fresh kale, Caesar dressing, and crunchy toppings.</p>
+      <h1><del>$56.00</del>Today Offer <ins>$53.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup7')">Close</button>
+    </div>
+  </div>
+ 
+    <div id="popup8" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Farm-to-Table Greens</h2>
+      <img src="images/menu pic8.jpg" alt="menu8" class="img" >
+      <p>Locally sourced leafy vegetables fresh from the farm.</p>
+      <h1><del>$67.00</del>Today Offer <ins>$64.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup8')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup9" class="popup-overlay">
+    <div class="popup">
+       <h1>Order Now</h1>
+      <h2>Roasted Beets & More</h2>
+      <img src="images/menu pic9.jpeg" alt="menu9" class="img" >
+      <p>Colorful roasted beets with fresh add-ons.</p>
+      <h1><del>$54.00</del>Today Offer <ins>$51.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup9')">Close</button>
+    </div>
+  </div>
+  
+  <script>
+    // ScrollSpy
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('main section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      function activateLink() {
+        let index = sections.length;
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+          link.setAttribute('aria-current', 'false');
+        });
+        navLinks[index].classList.add('active');
+        navLinks[index].setAttribute('aria-current', 'true');
+      }
+
+      activateLink();
+      window.addEventListener('scroll', activateLink);
+    });
+
+    // Popup Functions
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+</body>
+</html>

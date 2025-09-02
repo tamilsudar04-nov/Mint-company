@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order online.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <!-- font -->
+     <link href="https://fonts.cdnfonts.com/css/frenklins-display-trial" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet">
+                      
+</head>
+<body>
+    <!-- nav -->
+<div class="navbar"></div>   
+
+ <img class="leaf" src="images/leaf.png" alt="leaf">
+ <a class="mint" href="index.html">mint</a>
+ <a class="m" href="menu.html">Menu</a>
+<a class="our" href="our stroy.html">Our Story</a>
+<a class="reser" href="reservations.html">Reservation</a>
+<img class="log" src="images/user (1).png" alt="log">
+<p class="login">Log In</p>
+<img class="lock" src="images/lock.png" alt="lock">
+<a class="oo" href="order online.html">Order Online</a>
+
+
+<!-- phone Menu button -->
+<span class="menub" onclick="openNav()">☰</span>
+<!-- Side Nav -->
+<div id="sideNav" class="side">
+  <span class="close-bn" onclick="closeNav()">×</span>
+  <a href="order online.html">Order Online</a>
+  <a href="menu.html">Menu</a>
+  <a href="our stroy.html">Our Story</a>
+  <a href="reservations.html">Reservations</a>
+</div>
+
+
+
+
+
+<p class="online" >Order Online</p>
+<p class="you">You can order online! Browse our menu items and choose what you’d like to order from us.</p>
+<p class="Accepting">Accepting Orders</p>
+
+<div class="button">
+  <button  class="pick" onclick="showContent('pickup')">Pickup</button>
+  <button class="deli" onclick="showContent('delivery')">Delivery</button>
+</div>
+
+ <div id="save1" >
+<div class="content-block" id="pickupBlock">
+<p class="how">How would you like to receive your order?</p>
+<p class="from">pickup from:</p>
+<p class="india">Tamil Nadu,India</p>
+
+<div id="mainContainer" class="container">
+    <p >When:</p>
+    <label>
+        <input type="checkbox" class="when" value="now" checked>
+        Up to 30 minutes
+    </label><br>
+    <label>
+        <input type="checkbox" class="when" value="later">
+        Schedule for later
+    </label><br>
+    <button class="save" onclick="save()">Save</button>
+</div>
+</div>
+</div>
+
+<div class="content-block" id="deliveryBlock">
+  <div id="scheduleContainer" class="container hidden">
+    <label class="date">Date:
+        <select class="option"> 
+            <option>Today</option>
+            <option>Tomorrow</option>
+        </select>
+    </label>
+    <br><br>
+    <label class="time">Time:
+        <input class="type" type="time">
+    </label>
+    <br><br>
+    <button class="sav" onclick="sav()" id="saveBtn">Save</button>
+</div>
+</div>
+
+
+
+
+  <!-- Navigation -->
+  <nav id="menu-nav">
+    <a href="#snacks-starters" class="active" aria-current="true">Snacks & Starters</a>
+    <a href="#mains"  >Mains</a>
+    <a href="#salads"  >Salads</a>
+  </nav>
+
+  <main>
+    <!-- Snacks Section -->
+    <section id="snacks-starters">
+      <p class="ppp">Snacks & Starters</p>
+
+      <button class="dish-card" onclick="openPopup('popup1')">
+        <div class="dish-title">Hummus & Pita Bread</div>
+        <img class="pic" src="images/menu pic1.jpg" alt="">
+        <div class="dish-desc">Classic Middle Eastern combo that's healthy, filling, and easy to enjoy.</div>
+        <div class="dish-price">$38.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup2')">
+        <div class="dish-title">Crispy Cauliflower</div>
+        <img class="pic" src="images/menu pic2.jpg" alt="">
+        <div class="dish-desc">Crunchy outside, soft inside, full of flavor!</div>
+        <div class="dish-price">$32.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup3')">
+        <div class="dish-title">Sweet Potato Fries</div>
+        <img class="pic" src="images/menu pic3.jpg" alt="">
+        <div class="dish-desc">Crispy, mildly sweet fries made from spiced potato sticks.</div>
+        <div class="dish-price">$29.00</div>
+      </button>
+    </section>
+
+    <!-- Mains Section -->
+    <section id="mains">
+      <p class="ppp">Mains</p>
+
+      <button class="dish-card" onclick="openPopup('popup4')">
+        <div class="dish-title">Veggie Burger</div>
+        <img class="pic" src="images/menu pic4.jpg" alt="">
+        <div class="dish-desc">Plant-based patty served in a bun with veggies and sauces.</div>
+        <div class="dish-price">$61.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup5')">
+        <div class="dish-title">Power Bowl</div>
+        <img class="pic" src="images/menu pic5.jpg" alt="">
+        <div class="dish-desc">Nutrient-rich meal with grains, proteins, and veggies.</div>
+        <div class="dish-price">$58.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup6')">
+        <div class="dish-title">Lentil Stew</div>
+        <img class="pic" src="images/menu pic6.jpg" alt="">
+        <div class="dish-desc">Hearty stew made with lentils, vegetables, and spices.</div>
+        <div class="dish-price">$60.00</div>
+      </button>
+    </section>
+
+    <!-- Salads Section -->
+    <section id="salads">
+      <p class="ppp">Salads</p>
+
+      <button class="dish-card" onclick="openPopup('popup7')">
+        <div class="dish-title">Kale Caesar</div>
+        <img class="pic" src="images/menu pic7.jpg" alt="">
+        <div class="dish-desc">Fresh kale, Caesar dressing, and crunchy toppings.</div>
+        <div class="dish-price">$56.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup8')">
+        <div class="dish-title">Farm-to-Table Greens</div>
+          <img class="pic" src="images/menu pic8.jpg" alt="">
+        <div class="dish-desc">Locally sourced leafy vegetables fresh from the farm.</div>
+        <div class="dish-price">$67.00</div>
+      </button>
+
+      <button class="dish-card" onclick="openPopup('popup9')">
+        <div class="dish-title">Roasted Beets & More</div>
+          <img class="pic" src="images/menu pic9.jpeg" alt="">
+        <div class="dish-desc">Colorful roasted beets with fresh add-ons.</div>
+        <div class="dish-price">$54.00</div>
+      </button>
+    </section>
+  </main>
+
+  <!-- Popup Modals -->
+  <div id="popup1" class="popup-overlay">
+    <div class="popup">
+      <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Hummus & Pita Bread</h2>
+      <img src="images/menu pic1.jpg" alt="menu1" class="img" >
+       <p class="dish-desc">Classic Middle Eastern combo that's healthy, filling, and easy to enjoy.</p>
+       <h1 class="dish-price"><del>$38.00</del>Today's Offer <ins>$35.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup1')">Close</button>
+    </div>
+  </div>
+
+  <div id="popup2" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Crispy Cauliflower</h2>
+      <img src="images/menu pic2.jpg" alt="menu2"  class="img"  >
+      <p class="dish-desc">Crunchy outside, soft inside, full of flavor!</p>
+      <h1 class="dish-price"><del>$32.00</del>Today's Offer <ins>$29.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup2')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup3" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Sweet Potato Fries</h2>
+      <img src="images/menu pic3.jpg" alt="menu3"  class="img" >
+      <p class="dish-desc">Crispy, mildly sweet fries made from spiced potato sticks.</p>
+      <h1 class="dish-price"><del>$29.00</del>Today's Offer <ins>$26.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup3')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup4" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Veggie Burger</h2>
+      <img src="images/menu pic4.jpg" alt="menu4"  class="img" >
+      <p class="dish-desc">Plant-based patty served in a bun with veggies and sauces.</p>
+      <h1 class="dish-price"><del>$61.00</del>Today's Offer <ins>$58.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup4')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup5" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Power Bowl</h2>
+      <img src="images/menu pic5.jpg" alt="menu5" class="img" >
+      <p class="dish-desc">Nutrient-rich meal with grains, proteins, and veggies.</p>
+      <h1 class="dish-price"><del>$58.00</del>Today's Offer <ins>$55.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup5')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup6" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Lentil Stew</h2>
+      <img src="images/menu pic6.jpg" alt="menu6" class="img" >
+      <p class="dish-desc">Hearty stew made with lentils, vegetables, and spices.</p>
+      <h1 class="dish-price"><del>$60.00</del>Today's Offer<ins>$57.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup6')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup7" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Kale Caesar</h2>
+      <img src="images/menu pic7.jpg" alt="menu7" class="img" >
+      <p class="dish-desc">Fresh kale, Caesar dressing, and crunchy toppings.</p>
+      <h1 class="dish-price"><del>$56.00</del>Today's Offer <ins>$53.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup7')">Close</button>
+    </div>
+  </div>
+ 
+    <div id="popup8" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Farm-to-Table Greens</h2>
+      <img src="images/menu pic8.jpg" alt="menu8" class="img" >
+      <p class="dish-desc">Locally sourced leafy vegetables fresh from the farm.</p>
+      <h1 class="dish-price"><del>$67.00</del>Today's Offer <ins>$64.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup8')">Close</button>
+    </div>
+  </div>
+
+    <div id="popup9" class="popup-overlay">
+    <div class="popup">
+       <h1 class="topic">Order Now</h1>
+      <h2 class="dish-title">Roasted Beets & More</h2>
+      <img src="images/menu pic9.jpeg" alt="menu9" class="img" >
+      <p class="dish-desc">Colorful roasted beets with fresh add-ons.</p>
+      <h1 class="dish-price"><del>$54.00</del>Today's Offer <ins>$51.00</ins></h1>
+      <button class="close-btn" onclick="closePopup('popup9')">Close</button>
+    </div>
+  </div>
+
+<!-- box -->
+<div class="box"></div>
+<!-- box content -->
+ <p class="connect">Connect</p>
+<img class="insta" src="images/instagram.png" alt="insta">
+<img class="fb" src="images/facebook.png" alt="fb">
+<pre class="info"><b>123-456-7890
+info@mysite.com <b></pre>
+<h1 class="Visit">Visit</h1>
+<pre class="day" >Mon - Fri: 11am - 10pm
+​​Sat - Sun: 11am - 12pm
+
+500 Terry Francine Street
+San Francisco, CA 94158</pre>
+<p class="ju">Join Us</p>
+<p class="deals">Subscribe to our newsletter for updates and deals</p>
+
+<label class="email" for="emailInput">Email:</label><br><br>
+<input class="emailbox" type="email" id="emailInput" required> <br>    
+<p class="submit" onclick="submitEmail()">Submit</p>
+
+
+
+
+    
+
+       
+<script>
+      AOS.init();
+      function showContent(type) {
+    // Hide both first
+    document.getElementById("pickupBlock").style.display = "none";
+    document.getElementById("deliveryBlock").style.display = "none";
+
+    // Show selected one
+    if (type === "pickup") {
+      document.getElementById("pickupBlock").style.display = "block";
+    } else if (type === "delivery") {
+      document.getElementById("deliveryBlock").style.display = "block";
+    }
+  }
+  function save() {
+    
+   
+ alert("Submitted Successfully");
+        document.getElementById("save1").reset(); 
+  }
+ const mainContainer = document.getElementById("mainContainer");
+  const scheduleContainer = document.getElementById("scheduleContainer");
+   
+
+ radios.forEach(radio => {
+        radio.addEventListener("change", () => {
+            if (radio.value === "later") {
+                mainContainer.classList.add("hidden");
+                scheduleContainer.classList.remove("hidden");
+            }
+        });
+    });
+
+    function sav(){
+         alert("Submitted Successfully");
+        document.getElementById("sav").reset(); 
+    }
+ saveBtn.addEventListener("click", () => {
+        scheduleContainer.classList.add("hidden");
+        mainContainer.classList.remove("hidden");
+        document.querySelector("input[value='now']").checked = true;
+    });
+
+
+
+    
+ // ScrollSpy
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('main section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      function activateLink() {
+        let index = sections.length;
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+          link.setAttribute('aria-current');
+        });
+        navLinks[index].classList.add('active');
+        navLinks[index].setAttribute('aria-current', 'true');
+      }
+
+      activateLink();
+      window.addEventListener('scroll', activateLink);
+    });
+
+    // Popup Functions
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+
+
+
+     function openNav() {
+    document.getElementById("sideNav").style.width = "50vw";
+  }
+  function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
+  }
+
+
+
+
+
+
+
+</script>
+</html>

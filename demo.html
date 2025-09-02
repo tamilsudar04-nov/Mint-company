@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScrollSpy Menu Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+      background-color: #fcf3eb;
+    }
+    /* ScrollSpy nav styles */
+    nav {
+      border-bottom: 2px solid transparent;
+    }
+    nav a {
+      position: relative;
+      padding-bottom: 0.25rem;
+      font-weight: 500;
+      color: #25263b;
+      text-decoration: none;
+    }
+    nav a.active {
+      border-bottom: 2px solid #404258;
+      color: #404258;
+      font-weight: 600;
+    }
+    /* Section heading style */
+    h2 {
+      font-family: 'Georgia', serif;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #25263b;
+    }
+    /* Dish card styles */
+    .dish-card {
+      border: 1px solid #25263b;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      max-width: 42rem;
+      background-color: #fcf3eb;
+      box-sizing: border-box;
+    }
+    .dish-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #25263b;
+    }
+    .dish-desc {
+      font-size: 0.9rem;
+      line-height: 1.45;
+      margin-bottom: 0.75rem;
+      color: #404258;
+    }
+    .dish-icons {
+      color: #404258;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .dish-price {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #25263b;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="max-w-3xl mx-auto px-5 pt-5">
+    <!-- Navigation ScrollSpy -->
+    <nav class="flex space-x-10 text-lg" id="menu-nav">
+      <a href="#snacks-starters" class="active" aria-current="true">Snacks &amp; Starters</a>
+      <a href="#mains">Mains</a>
+      <a href="#salads">Salads</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="snacks-starters" tabindex="-1" aria-label="Snacks and Starters Section">
+      <h2>Snacks &amp; Starters</h2>
+      <div class="dish-card">
+        <div class="dish-title">Hummus &amp; Pita Bread</div>
+        <div class="dish-desc">I'm a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.</div>
+        <div class="dish-icons" aria-label="Vegan icon and nut free icon">
+          🥑 🥜
+        </div>
+        <div class="dish-price">$38.00</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-title">Crispy Cauliflower</div>
+        <div class="dish-desc">I'm a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.</div>
+        <div class="dish-icons" aria-label="Vegan icon and spicy icon">
+          🥑 🌶️
+        </div>
+        <div class="dish-price">$32.00</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-title">Sweet Potato Fries</div>
+        <div class="dish-desc">I'm a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.</div>
+        <div class="dish-icons" aria-label="Vegan icon and nut free icon">
+          🥑 🥜
+        </div>
+        <div class="dish-price">$29.00</div>
+      </div>
+    </section>
+
+    <section id="mains" tabindex="-1" aria-label="Mains Section" class="mt-20">
+      <h2>Mains</h2>
+      <div class="dish-card">
+        <div class="dish-title">Grilled Salmon</div>
+        <div class="dish-desc">A delicious grilled salmon with a lemon butter sauce.</div>
+        <div class="dish-icons" aria-label="Seafood icon">
+          🐟
+        </div>
+        <div class="dish-price">$48.00</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-title">Roast Chicken</div>
+        <div class="dish-desc">Herb roasted chicken served with seasonal vegetables.</div>
+        <div class="dish-icons" aria-label="Poultry icon">
+          🍗
+        </div>
+        <div class="dish-price">$42.00</div>
+      </div>
+    </section>
+
+    <section id="salads" tabindex="-1" aria-label="Salads Section" class="mt-20">
+      <h2>Salads</h2>
+      <div class="dish-card">
+        <div class="dish-title">Caesar Salad</div>
+        <div class="dish-desc">Crisp romaine lettuce with parmesan, croutons, and Caesar dressing.</div>
+        <div class="dish-icons" aria-label="Vegetarian icon">
+          🥬
+        </div>
+        <div class="dish-price">$24.00</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-title">Quinoa Salad</div>
+        <div class="dish-desc">Healthy quinoa with mixed greens, nuts, and vinaigrette.</div>
+        <div class="dish-icons" aria-label="Vegan icon and nut free icon">
+          🥑 🥜
+        </div>
+        <div class="dish-price">$27.00</div>
+      </div>
+    </section>
+  </main>
+
+<script>
+  // ScrollSpy logic
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('main section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    function activateLink() {
+      let index = sections.length;
+      // We check from bottom to top so the last visible section gets priority
+      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+      navLinks.forEach((link) => link.classList.remove('active'));
+      navLinks[index].classList.add('active');
+      navLinks.forEach(link => link.setAttribute('aria-current', 'false'));
+      navLinks[index].setAttribute('aria-current', 'true');
+    }
+
+    activateLink();
+    window.addEventListener('scroll', activateLink);
+  });
+</script>
+
+</body>
+</html>
+
+

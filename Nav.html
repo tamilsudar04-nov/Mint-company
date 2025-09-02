@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Nav Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Menu button */
+    .menu-btn {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    /* Side navigation */
+    .side-nav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #fdf6f0;
+      overflow-x: hidden;
+      transition: 0.4s;
+      padding-top: 40px;
+      box-shadow: -2px 0 6px rgba(0,0,0,0.1);  
+    }
+
+    .side-nav a {
+      display: block;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #1e1432;
+      transition: 0.2s;
+      text-align: center;
+    }
+
+    .side-nav a:hover {
+      background: rgba(0,0,0,0.05);
+    }
+
+  
+    
+
+    /* Close button */
+    .side-nav .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+ 
+    .user-icon {
+      font-size: 40px;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menu button -->
+<span class="menu-btn" onclick="openNav()">☰</span>
+
+<!-- Side Nav -->
+<div id="sideNav" class="side-nav">
+  <span class="close-btn" onclick="closeNav()">×</span>
+
+<a href="#">Log In</a>
+  <a href="order online.html" class="order-btn">Order Online</a>
+  <a href="menu.html">Menu</a>
+  <a href="our stroy.html">Our Story</a>
+  <a href="reservations.html">Reservations</a>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("sideNav").style.width = "25vh";
+  }
+  function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
+  }
+</script>
+
+</body>
+</html>

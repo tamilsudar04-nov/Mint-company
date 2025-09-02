@@ -1,0 +1,983 @@
+@import url('https://fonts.cdnfonts.com/css/frenklins-display-trial');
+@import url('https://fonts.cdnfonts.com/css/quicksand');
+                
+    body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+     background-color: rgb(249, 247, 244) !important;
+    }     
+    
+    .nav{
+     border:1px solid rgb(249, 247, 244);
+     background-color:rgb(249, 247, 244) ;
+     height:180px;
+  
+    
+    }
+    .leaf{
+       width: 6vw;
+       height: 12vh;
+       margin-left: 15vh;
+       margin-top: -35vh;
+        position: relative;
+       z-index: 2;
+    }
+    .mint{
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       text-decoration: none;
+      position: absolute;
+      font-size: 4.5vh;
+      color: black;
+      margin-top: -9vh;
+      margin-left: -11vh;
+    }
+    
+    
+    .m{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left:50vh;
+      margin-top: -15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .m:hover{
+      color: rgb(82, 112, 82);
+    }
+    .our{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left:63vh;
+      margin-top:-15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .our:hover{
+    color: rgb(82, 112, 82);
+    }
+    .reser{
+      font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      margin-left: 83vh;
+      margin-top: -15vh;
+      text-decoration: none;
+      position: absolute;
+      color: black;
+    }
+    .reser:hover{
+      color: rgb(82, 112, 82);
+    }
+    .log{
+       width: 3vw;
+       height: 6vh;
+       margin-left: 115vh;
+       margin-top: -29vh;
+      }
+      .login{
+        font-family:'Quicksand Book', sans-serif;
+      font-size: 2.8vh;
+      font-weight: bold;
+      position: absolute;
+      margin-left: 152vh;
+      margin-top: -18vh;
+      }
+      .lock{
+       width:2.5vw;
+       height:5vh; 
+       margin-left:15vh;
+       margin-top:-29vh;
+       
+      }
+
+      .oo{
+   font-weight: bold;
+  color: white;
+  background-color: rgb(1, 1, 31);
+  border: solid;
+  max-width: fit-content;
+  padding: 1.5vh 1vw;
+  margin-left:10vh;
+  margin-top: -15vh;
+  border-radius: 5vh;
+  position: absolute;
+  font-family: 'Frenklins Display Trial', sans-serif;
+  text-decoration: none;
+    }
+.oo:hover{
+  color: rgb(1, 1, 31);
+  background-color: white;
+    }
+.menub {
+  display: none;
+}
+.side{
+  display: none;
+}
+     .side .close-btn {
+  display:none;
+} 
+.carousel{
+      margin-left: 5vh;  
+    }
+.fresh{
+    margin-left: 7vw;         
+    margin-top: 12vh;       
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Frenklins Display Trial', sans-serif;                                          
+   } 
+   
+.bd{        
+      margin-left: 5vw;        
+      height: 100vh;           
+      width: 90vw;    
+    }
+.serve{
+      margin-top: 16vh;       
+      font-size: 2.5vw;         
+      line-height: 6vh; 
+      text-align: center; 
+    } 
+.om{
+  font-weight: bold;
+  color: white;
+  background-color: rgb(1, 1, 31);
+  border: solid;
+  max-width: fit-content;
+  padding: 1.5vh 3vw;
+  margin-left: 90vh;
+  margin-top: 30vh;
+  border-radius: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+  text-decoration: none;
+    }
+.om:hover{
+  color: rgb(1, 1, 31);
+  background-color: white;
+    }
+.ftt{
+  font-family: 'Frenklins Display Trial', sans-serif;
+  font-size:8vh;
+  margin-left:28vh;
+  margin-top: -70vh;
+    }
+.food1{ 
+  font-family:'Quicksand Book', sans-serif;
+  font-size:3vh;
+  margin-left:28vh;
+  margin-top: vh;
+    }
+.foodpic1{
+  height: 85vh;
+  width: 30vw;
+  border-radius: 30vh 30vh 0 0;
+  margin-left: 125vh;
+  margin-top: 18vh;
+   }
+.os{
+  font-weight: bold;
+  color:rgb(1, 1, 31) ;
+  border: solid;    
+  max-width: fit-content;
+  padding: 1.5vh 3vw;
+  margin-left: 30vh;
+  margin-top: 30vh;
+  border-radius: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+  text-decoration: none;
+   }
+.os:hover{
+  color: white;
+  background-color:rgb(1, 1, 31) ;
+    }
+.box1{
+  margin-left: -4vh;
+  border-radius: 5vh;
+  position: relative;
+    margin-top:20vh;                         
+    width:75vw;                              
+    height: 60vh;                               
+    border:rgb(82, 122, 82);                   
+    background-color:rgb(82, 112, 82);       
+}
+.icon1{
+  width: 6vw;
+  height: 8vh; 
+  margin-top: -48vh;
+  position: absolute;
+  margin-left: 9vh; 
+}
+.sub1{
+  margin-top: -40vh;
+  position: absolute;
+  margin-left: 7vh;
+  font-weight: bold;
+  font-size: 5vh;
+   color: white;
+ 
+}
+.iconp1{
+  margin-top: -32vh;
+  position: absolute;
+  margin-left: 7vh;
+  font-size: 2.5vh;
+   color: white;
+  font-family:'Quicksand Book', sans-serif;
+}
+.icon2{
+   width: 6vw;
+  height: 8vh;
+   margin-left: 58vh;
+   margin-top: -48vh;
+  position: absolute; 
+}
+.sub2{
+  margin-left: 57vh;
+   margin-top: -40vh;
+  position: absolute;
+  font-weight: bold;
+  font-size: 5vh;
+   color: white;
+} 
+.iconp2{
+  margin-top: -32vh;
+  position: absolute;
+  margin-left: 57vh;
+  font-size: 2.5vh;
+   color: white;
+  font-family:'Quicksand Book', sans-serif;
+}
+.icon3{
+   width: 6vw;
+  height: 8vh;
+  margin-left:108vh;
+  margin-top: -48vh;
+  position: absolute; 
+}
+
+.sub3{
+  margin-left:110vh;
+  margin-top: -41vh;
+  position: absolute;
+  font-weight: bold;
+  font-size: 5vh;
+   color: white;
+}
+.iconp3{
+  margin-top: -32vh;
+  position: absolute;
+  margin-left: 110vh;
+  font-size: 2.5vh; 
+   color: white;
+  font-family:'Quicksand Book', sans-serif;
+}
+.video{
+ width: 90vw;       
+    height: 90vh;     
+    margin: 40px auto;  
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.pancake{
+ font-family: 'Frenklins Display Trial', sans-serif;
+  font-size:6vh;
+  margin-left:80vh;
+  margin-top: -93vh; 
+ color: white;
+}
+.box2{
+  margin-left: 40vh;
+  position: relative;
+  margin-top:130vh;                         
+  width:78vw;                              
+  height: 70vh;                               
+  border:rgb(82, 122, 82);                   
+  background-color:rgb(82, 112, 82);       
+}
+.drinks{
+   height: 95vh;
+  width: 35vw;
+  border-radius: 34vh 34vh 0 0;
+  margin-left: 30vh;
+  margin-top: -90vh;
+  position: absolute;
+}
+.word{
+  font-family: 'Frenklins Display Trial', sans-serif;
+  font-size:8vh;
+  color: white;
+  margin-left: 133vh;
+  margin-top: -60vh;
+  position: absolute;
+}
+.wordp{
+  position: absolute;
+  margin-left: 125vh;
+  margin-top: -30vh;
+  color: white;
+  font-size: 3vh;
+  text-align-last: center;
+   font-family:'Quicksand Book', sans-serif;
+}
+.rat{
+  font-size: 5.5vh;
+   font-family: 'Frenklins Display Trial', sans-serif;
+   margin-top: 25vh;
+   text-align: center;
+}
+.help{
+     font-family:'Quicksand Book', sans-serif;
+font-size: 3vh;
+    text-align: center;
+}
+.party{
+font-family:'Quicksand Book', sans-serif;
+font-size: 3vh;
+font-weight: bold;
+margin-left: 13vh;
+margin-top: 10vh;
+}
+.partySize{
+  width: 20vw;
+  height: 5vh;
+margin-left: 13vh;
+margin-top: 2vh;
+}
+.date{
+  font-family:'Quicksand Book', sans-serif;
+font-size: 3vh;
+
+margin-left: 62vh;
+font-weight: bold;
+margin-top: -11.5vh;
+
+}
+.calender{
+position: absolute;
+margin-left:62vh;
+margin-top:-3.5vh;
+width: 20vw;
+height: 5vh;
+}
+.neram{
+font-family:'Quicksand Book', sans-serif;
+position: absolute;
+font-size: 3vh;
+font-weight: bold;
+margin-left: 112vh;
+margin-top: -10vh;
+}
+.time{
+position: absolute;
+width: 20vw;
+height: 5vh;
+margin-left: 112vh;
+margin-top: -6.8vh;
+}
+.find{
+  border:  solid rgb(82, 112, 82);
+  background-color: rgb(82, 112, 82);
+  color: white;
+  font-weight: bold;
+  max-width: fit-content;
+  padding: 1vh 1vw;
+  margin-left: 168vh;
+  margin-top: -8vh;
+  border-radius: 5vh;
+  
+  
+}  
+.find:hover{
+  color: rgb(82, 112, 82);
+  background-color:white;
+}
+.box{
+  margin-top: 30vh;
+
+  border:38vh solid rgb(4, 4, 63);
+}
+ .connect{
+    color: white;
+    font-size: 5.5vh;
+    margin-top: -58vh;
+    margin-left: 30vh;
+   font-family: 'Frenklins Display Trial', sans-serif; 
+}  
+.insta{
+  margin-top: 2VH;
+  margin-left: 30vh;
+    width: 2vw;
+    height:5vh ;
+}
+.fb{
+   margin-top: 2VH;
+  width: 2vw;
+    height:5vh ;
+    margin-left:2vh;
+}
+.info{
+  font-size: 2.5vh;
+  color: white;
+  margin-top: 4VH;
+  margin-left: 30vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.Visit{
+  color: white;
+  margin-top: -30vh;
+  margin-left: 80vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.day{
+   color: white;
+   font-size: 2.3vh;
+  margin-top: 5vh;
+  margin-left: 80vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.ju{
+  color: white;
+  font-size: 5vh;
+  margin-top: -31vh;
+  margin-left: 130vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.deals{
+color: white;
+font-size: 2.3vh;
+margin-left: 130vh;
+font-family:'Quicksand Book', sans-serif;
+
+}
+.email{
+margin-left: 130vh;
+color: white;
+font-family:'Quicksand Book', sans-serif;
+}
+.emailbox{
+margin-left: 130vh;
+
+}
+.submit{
+border:0.2vh solid white;
+max-width: fit-content;
+padding: 1vh 2vh;
+margin-left: 137vh;
+margin-top: 5vh;
+border-radius: 4vh;
+font-size: 2vh;
+color: white;
+font-family:'Quicksand Book', sans-serif;
+}
+.submit:hover{
+    background-color: white;
+    color:rgb(4, 4, 63);
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+  body { 
+  margin: 0;
+   padding: 0;
+ height: 100%;
+ background-color: rgb(249, 247, 244) !important;
+  
+  }
+.nav{
+     border:1px solid rgb(249, 238, 227);
+     background-color: rgb(249, 238, 227);
+     height:100px;
+     width: 98vw;
+    }
+    
+    .leaf{
+       width: 10vw;
+       height: 7vh;
+       margin-left: 8vh;
+       margin-top:-12vh;
+        position: absolute;
+      
+    }
+    .mint{
+       font-family: 'Frenklins Display Trial', sans-serif; 
+       text-decoration: none;
+      position: absolute;
+      font-size: 3vh;
+      color: black;
+      margin-top: -5vh;
+      margin-left: 7.2vh;
+      
+     
+    } 
+    .m{
+     display: none;
+    }
+   
+    .our{
+      display: none;
+    }
+    
+    .reser{
+      display: none;
+    }
+    
+    .log{
+      display: none;
+      }
+      .login{
+       display: none;
+      }
+     
+.oo{
+  display: none;
+}
+.lock{
+  position: absolute;
+  width: auto;
+  margin-left: 28vh;
+  margin-top: -9vh;
+
+}
+.menub {
+  font-size:5vh; 
+  margin-top: -10vh;  
+   margin-left: 38vh; 
+  position: absolute;
+  display:block;  
+}
+
+/* Side navigation */
+.side {
+  height:30vh; 
+  width: 0;    
+z-index: 100;  
+border: 0.2vh solid #fdf6f0;
+   top: 0;
+  right:0;
+ background-color:#fdf6f0;
+  display:inline-block;
+   overflow-x: hidden;
+   position: absolute;
+  transition: 0.4s;
+  padding-top: 5vh;  
+  box-shadow: -0.5vw 0 1vw rgba(0,0,0,0.1); 
+}
+
+.side a {
+      display:block;
+      padding: 5px 5px;
+      text-decoration: none;
+      font-size: 2vh;
+      color: #1e1432;
+      transition: 0.2s;
+      text-align: center;
+    }
+
+  
+/* Close button */
+.side .close-btn {
+  position: absolute;
+  top: -2vh;
+  right: 0vw;          
+  font-size: 15vw;    
+  cursor: pointer;
+  display:inline-block;
+}
+
+    .carousel{
+      margin-left: 1vh; 
+      width: 90%; 
+      height: 10%;
+    }
+.fresh{
+    margin-left: 7vw;
+    margin-top: 5vh;
+    font-size: 8vw;
+    font-weight: bold;
+    font-family: 'Frenklins Display Trial', sans-serif;
+}
+.serve{
+      margin-top: 5vh;       
+      font-size: 3.5vw;         
+      line-height: vh; 
+      text-align: center; 
+    } 
+    .om{
+  
+  color: white;
+  background-color: rgb(1, 1, 31);
+  border: solid;
+  max-width: fit-content;
+  padding: 1vh 2vw;
+  margin-left: 18vh;
+  margin-top: -8vh;
+  border-radius: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+  text-decoration: none;
+    }
+.om:hover{
+  color: rgb(1, 1, 31);
+  background-color: white;
+    }
+
+.foodpic1{
+  height: 60vh;
+  width: 85vw;
+  border-radius: 30vh 30vh 0 0;
+  margin-left: 3.5vh;
+  margin-top: 10vh;
+   }
+ .ftt{
+  font-family: 'Frenklins Display Trial', sans-serif;
+  font-size:5vh;
+  text-align: center;
+  margin-top: 5vh;
+  margin-left: 2vh;
+    } 
+.food1{ 
+  font-family:'Quicksand Book', sans-serif;
+  font-size:2.5vh;
+  margin-left: 2vh;
+  
+ } 
+.os{
+  font-weight: bold;
+  color:rgb(1, 1, 31) ;
+  border: solid;    
+  max-width: fit-content;
+  padding: 1.5vh 3vw;
+  margin-left: 17vh;
+  margin-top: 30vh;
+  border-radius: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+  text-decoration: none;
+  }
+.os:hover{
+  color: white;
+  background-color:rgb(1, 1, 31) ;
+  }
+.box1{
+    margin-left: -4vh;
+    position: relative;
+    margin-top:20vh;                         
+    width:103vw;                              
+    height: 150vh;                               
+    border:rgb(82, 122, 82);                   
+    background-color:rgb(82, 112, 82);       
+}
+.icon1{
+  width: 25vw;
+  height: 15vh; 
+  margin-top: -145vh;
+  position: absolute;
+  margin-left: 15vh; 
+}
+.sub1{
+  margin-top: -130vh;
+  position: absolute;
+  margin-left: 8vh;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.iconp1{
+  margin-top: -120vh;
+  position: absolute;
+  margin-left:2.5vh;
+  font-size: 2.5vh;
+  color: white;
+  text-align: center;
+  font-family:'Quicksand Book', sans-serif;
+}     
+.icon2{
+  width: 25vw;
+  height: 15vh; 
+  margin-left: 15vh;
+  margin-top: -100vh;
+  position: absolute; 
+}
+.sub2{
+  margin-left: 6vh;
+  margin-top: -83vh;
+  position: absolute;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+} 
+.iconp2{
+  margin-top: -73vh;
+  position: absolute;
+  margin-left: 1.5vh;
+  font-size: 2.5vh;
+  color: white;
+  text-align: center;
+  font-family:'Quicksand Book', sans-serif;
+}
+.icon3{
+  width: 25vw;
+  height: 15vh; 
+  margin-left:15vh;
+  margin-top: -53vh;
+  position: absolute; 
+}
+.sub3{
+  margin-left:12vh;
+  margin-top: -41vh;
+  position: absolute;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+}
+.iconp3{
+  margin-top: -32vh;
+  position: absolute;
+  margin-left: 2vh;
+  text-align: center;
+  font-size: 2.5vh; 
+  color: white;
+  font-family:'Quicksand Book', sans-serif;
+}
+.video{
+ width: 89vw;       
+    height: 50vh; 
+    margin-right: 3vh;    
+    margin: 10px auto;  
+    display: block;
+   object-fit: cover;
+}
+.pancake{
+ font-family: 'Frenklins Display Trial', sans-serif;
+  font-size:3vh;
+  margin-left:13vh;
+  margin-top: -50vh; 
+ color: white;
+}
+.box2{
+  margin-left: 6vh;
+  position: relative;
+  margin-top:100vh;                         
+  width:78vw;                              
+  height: 20vh;                               
+  border:rgb(82, 122, 82);                   
+  background-color:rgb(82, 112, 82);       
+}
+.drinks{
+   height: 45vh;
+  width: 75vw;
+  border-radius: 100vh 100vh 0 0;
+  margin-left: 6vh;
+  margin-top: -75vh;
+  position: absolute;
+}                        
+.word{
+  font-family: 'Frenklins Display Trial', sans-serif;
+  font-size:2vh;
+  color: white;
+  margin-left: 18vh;
+  margin-top: -18vh;
+  position: absolute;
+}
+.wordp{
+  position: absolute;
+  margin-left: 12vh;
+  margin-top: -10vh;
+  color: white;
+  font-size: 1vh;
+  text-align-last: center;
+   font-family:'Quicksand Book', sans-serif;
+}
+.rat{
+  font-size: 3vh;
+   font-family: 'Frenklins Display Trial', sans-serif;
+   margin-top: 8vh;
+   text-align: center;
+}
+.help{
+     font-family:'Quicksand Book', sans-serif;
+font-size: 1.5vh;
+    text-align: center;
+}
+.party{
+font-family:'Quicksand Book', sans-serif;
+font-size: 3vh;
+font-weight: bold;
+margin-left:3vh;
+margin-top: 10vh;
+}
+.partySize{
+  width: 85vw;
+  height: 5vh;
+margin-left: 3vh;
+margin-top: 1vh;
+}
+.date{
+  font-family:'Quicksand Book', sans-serif;
+font-size: 3vh;
+margin-left: 3vh;
+margin-top: 2vh;
+font-weight: bold;
+
+
+}
+.calender{
+position: absolute;
+margin-left:3vh;
+margin-top:-3vh;
+  width: 85vw;
+  height: 5vh;
+}
+.neram{
+font-family:'Quicksand Book', sans-serif;
+position: absolute;
+font-size: 3vh;
+font-weight: bold;
+margin-left: 3vh;
+margin-top:3vh;
+}
+.time{
+position: absolute;
+  width: 85vw;
+  height: 5vh;
+margin-left:3vh;
+margin-top: 5vh;
+}
+.find{
+  border:  solid rgb(82, 112, 82);
+  background-color: rgb(82, 112, 82);
+  color: white;
+  font-weight: bold;
+  max-width: fit-content;
+  padding: 1vh 4vw;
+  margin-left: 14vh;
+  margin-top: 20vh;
+  border-radius: 5vh;
+    
+}  
+.find:hover{
+  color: rgb(82, 112, 82);
+  background-color:white;
+}
+
+.box{
+ margin-top: 0vh;
+  position: relative;
+  width: 99vw;
+  height: 120vh;
+  background-color:rgb(4, 4, 63);
+  border:2vh solid rgb(4, 4, 63);
+}
+ .connect{
+  position: absolute;
+    color: white;
+    font-size: 3vh;
+    margin-top: -115vh;
+    margin-left: 5vh;
+   font-family: 'Frenklins Display Trial', sans-serif; 
+}  
+.insta{
+  position: absolute;
+  margin-left: 5vh;
+  margin-top: -108vh;
+    width: 10vw;
+    height:5vh ;
+}
+.fb{
+  margin-left: 11vh;
+  margin-top: -108vh;
+  width: 10vw;
+  height:5vh ;
+  position: absolute; 
+}
+.info{
+  position: absolute;
+  font-size: 2.5vh;
+  color: white;
+  margin-top: -100vh;
+  margin-left: 5vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.Visit{
+  position: absolute;
+  color: white;
+  margin-top: -88vh;
+  margin-left: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.day{
+  position: absolute;
+   color: white;
+   font-size: 2.3vh;
+  margin-top: -80vh;
+  margin-left: 5vh;
+  font-family:'Quicksand Book', sans-serif;
+}
+.ju{
+  position: absolute;
+  color: white;
+  font-size: 3vh;
+  margin-top: -58vh;
+  margin-left: 5vh;
+  font-family: 'Frenklins Display Trial', sans-serif;
+}
+.deals{
+  position: absolute;
+color: white;
+font-size: 2.3vh;
+margin-top: -52vh;
+margin-left: 5vh;
+font-family:'Quicksand Book', sans-serif;
+
+}
+.email{
+  position: absolute;
+margin-left: 5vh;
+margin-top: -38vh;
+color: white;
+font-family:'Quicksand Book', sans-serif;
+}
+.emailbox{
+margin-left: 5vh;
+margin-top: -38vh;
+position: absolute;
+}
+.submit{
+border:0.2vh solid white;
+max-width: fit-content;
+padding: 1vh 2vh;
+margin-left: 5vh;
+margin-top: -30vh;
+border-radius: 4vh;
+font-size: 2vh;
+color: white;
+position: absolute;
+font-family:'Quicksand Book', sans-serif;
+}
+.submit:hover{
+    background-color: white;
+    color:rgb(4, 4, 63);
+}  
+
+
+}
